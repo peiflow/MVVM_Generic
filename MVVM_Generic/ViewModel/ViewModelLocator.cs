@@ -1,6 +1,5 @@
-using CommonServiceLocator;
-using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using Microsoft.Practices.ServiceLocation;
 using ModuleGeneric.ViewModel;
 
 namespace MVVM_Generic.ViewModel
@@ -18,17 +17,6 @@ namespace MVVM_Generic.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
-            ////if (ViewModelBase.IsInDesignModeStatic)
-            ////{
-            ////    // Create design time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DesignDataService>();
-            ////}
-            ////else
-            ////{
-            ////    // Create run time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DataService>();
-            ////}
-
             SimpleIoc.Default.Register<ShellViewModel>();
             SimpleIoc.Default.Register<GenericModuleViewModel>();
         }
@@ -38,6 +26,14 @@ namespace MVVM_Generic.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<ShellViewModel>();
+            }
+        }
+
+        public GenericModuleViewModel GenericModule
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<GenericModuleViewModel>();
             }
         }
 
