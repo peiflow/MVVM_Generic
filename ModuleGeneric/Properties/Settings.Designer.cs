@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVVM_Test.Properties
+namespace ModuleGeneric.Properties
 {
 
 
