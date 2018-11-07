@@ -36,6 +36,14 @@ namespace MVVM_Generic.ViewModel
                 return ServiceLocator.Current.GetInstance<GenericModuleViewModel>();
             }
         }
+
+        public GenericModuleViewModel GenericModule
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<GenericModuleViewModel>();
+            }
+        }
         
         public static void Cleanup()
         {

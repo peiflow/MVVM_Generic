@@ -1,6 +1,6 @@
 using GalaSoft.MvvmLight;
 
-namespace MVVM_Generic.ViewModel
+namespace ModuleGeneric.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.
@@ -14,12 +14,12 @@ namespace MVVM_Generic.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class GenericModuleViewModel : ViewModelBase
     {
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public GenericModuleViewModel()
         {
             ////if (IsInDesignMode)
             ////{
