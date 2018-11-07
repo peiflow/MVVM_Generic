@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace MVVM_Test
+namespace MVVM_Generic
 {
     /// <summary>
     /// Lógica de interacción para App.xaml
