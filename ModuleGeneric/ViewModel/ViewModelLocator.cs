@@ -42,14 +42,14 @@ namespace ModuleGeneric.ViewModel
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
 
-            SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<GenericModuleViewModel>();
         }
 
-        public MainViewModel Main
+        public GenericModuleViewModel Main
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
+                return ServiceLocator.Current.GetInstance<GenericModuleViewModel>();
             }
         }
         

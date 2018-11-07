@@ -14,12 +14,12 @@ namespace ModuleGeneric.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class GenericModuleViewModel : ViewModelBase
     {
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public GenericModuleViewModel()
         {
             ////if (IsInDesignMode)
             ////{
