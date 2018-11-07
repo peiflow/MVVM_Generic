@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ModuleGeneric
+namespace ModuleGeneric.View
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para GenericModuleView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GenericModuleView : UserControl
     {
-        public MainWindow()
+        public GenericModuleView()
         {
             InitializeComponent();
         }
